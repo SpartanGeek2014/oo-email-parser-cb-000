@@ -16,7 +16,7 @@ class EmailParser
 
   def parse
     emails.split.map do |email|
-      email.split(',')
+      email.split(',') #separates the emails with a comma
     end.flatten.uniq
   end
 
